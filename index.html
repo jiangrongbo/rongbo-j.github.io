@@ -56,6 +56,8 @@
 	        
 				<li><a href="http://blog.csdn.net/rongbo_j">CSDN博客</a></li>
 	        
+				<li><a href="/tags">标签</a></li>
+	        
 				<li><a href="/aboutme">关于我</a></li>
 	        
 			</ul>
@@ -80,7 +82,7 @@
 				
 					<a class="github" target="_blank" href="https://github.com/rongbo-j" title="github"><i class="icon-github"></i></a>
 		        
-					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+					<a class="weibo" target="_blank" href="https://www.weibo.com/u/5370588273" title="weibo"><i class="icon-weibo"></i></a>
 		        
 					<a class="mail" target="_blank" href="mailto:jiangrongbo@gmail.com" title="mail"><i class="icon-mail"></i></a>
 		        
@@ -114,6 +116,8 @@
 			
 				
 			
+				
+			
 			
 			
 			<nav class="header-nav">
@@ -121,7 +125,7 @@
 					
 						<a class="github" target="_blank" href="https://github.com/rongbo-j" title="github"><i class="icon-github"></i></a>
 			        
-						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+						<a class="weibo" target="_blank" href="https://www.weibo.com/u/5370588273" title="weibo"><i class="icon-weibo"></i></a>
 			        
 						<a class="mail" target="_blank" href="mailto:jiangrongbo@gmail.com" title="mail"><i class="icon-mail"></i></a>
 			        
@@ -132,11 +136,13 @@
 				<ul style="width: 70%">
 				
 				
-					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
+					<li style="width: 25%"><a href="/">主页</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="http://blog.csdn.net/rongbo_j">CSDN博客</a></li>
+					<li style="width: 25%"><a href="http://blog.csdn.net/rongbo_j">CSDN博客</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/aboutme">关于我</a></li>
+					<li style="width: 25%"><a href="/tags">标签</a></li>
+		        
+					<li style="width: 25%"><a href="/aboutme">关于我</a></li>
 		        
 				</ul>
 			</nav>
@@ -160,13 +166,13 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/04/30/HashSet/">HashSet 底层分析</a>
+      <a class="article-title" href="/2018/03/30/HashSet/">HashSet 底层分析</a>
     </h1>
   
 
         
-        <a href="/2018/04/30/HashSet/" class="archive-article-date">
-  	<time datetime="2018-04-30T05:53:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-30</time>
+        <a href="/2018/03/30/HashSet/" class="archive-article-date">
+  	<time datetime="2018-03-30T05:53:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-30</time>
 </a>
         
       </header>
@@ -177,7 +183,7 @@
 <h2 id="成员变量"><a href="#成员变量" class="headerlink" title="成员变量"></a>成员变量</h2><p>首先了解下 <code>HashSet</code> 的成员变量:</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">transient</span> HashMap&lt;E,Object&gt; map;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Dummy value to associate with an Object in the backing Map</span></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> Object PRESENT = <span class="keyword">new</span> Object();</span><br></pre></td></tr></table></figure>
         
-          <a class="article-more-a" href="/2018/04/30/HashSet/#more">More >></a>
+          <a class="article-more-a" href="/2018/03/30/HashSet/#more">More >></a>
         
       
 
@@ -201,7 +207,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2018/04/30/HashSet/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/03/30/HashSet/">展开全文 >></a>
         </p>
       
 
@@ -238,13 +244,13 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/04/30/ReentrantLock/">ReentrantLock 实现原理</a>
+      <a class="article-title" href="/2018/03/30/ReentrantLock/">ReentrantLock 实现原理</a>
     </h1>
   
 
         
-        <a href="/2018/04/30/ReentrantLock/" class="archive-article-date">
-  	<time datetime="2018-04-29T22:42:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-30</time>
+        <a href="/2018/03/30/ReentrantLock/" class="archive-article-date">
+  	<time datetime="2018-03-29T22:42:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-30</time>
 </a>
         
       </header>
@@ -255,7 +261,7 @@
 <p>而 <code>ReentrantLock</code> 就是一个普通的类，它是基于 <code>AQS(AbstractQueuedSynchronizer)</code>来实现的。</p>
 <p>是一个<strong>重入锁</strong>：一个线程获得了锁之后仍然可以<strong>反复</strong>的加锁，不会出现自己阻塞自己的情况。<br>
         
-          <a class="article-more-a" href="/2018/04/30/ReentrantLock/#more">More >></a>
+          <a class="article-more-a" href="/2018/03/30/ReentrantLock/#more">More >></a>
         
       
 
@@ -279,7 +285,323 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2018/04/30/ReentrantLock/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/03/30/ReentrantLock/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-design_pattern_58" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/29/design_pattern_58/">工厂三兄弟之工厂方法模式（二）</a>
+    </h1>
+  
+
+        
+        <a href="/2018/03/29/design_pattern_58/" class="archive-article-date">
+  	<time datetime="2018-03-28T17:54:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-29</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>2 工厂方法模式概述</p>
+<p>在简单工厂模式中只提供一个工厂类，该工厂类处于对产品类进行实例化的中心位置，它需要知道每一个产品对象的创建细节，并决定何时实例化哪一个产品类。简单工厂模式最大的缺点是当有新产品要加入到系统中时，必须修改工厂类，需要在其中加入必要的业务逻辑，这违背了“开闭原则”。此外，在简单工厂模式中，所有的产品都由同一个工厂创建，工厂类职责较重，业务逻辑较为复杂，具体产品与工厂类之间的耦合度高，严重影响了系统的灵活性和扩展性，而工厂方法模式则可以很好地解决这一问题。</p>
+<p>在工厂方法模式中，我们不再提供一个统一的工厂类来创建所有的产品对象，而是针对不同的产品提供不同的工厂，系统提供一个与产品等级结构对应的工厂等级结构。工厂方法模式定义如下：</p>
+<p>工厂方法模式(Factory Method Pattern)：定义一个用于创建对象的接口，让子类决定将哪一个类实例化。工厂方法模式让一个类的实例化延迟到其子类。工厂方法模式又简称为工厂模式(Factory Pattern)，又可称作虚拟构造器模式(Virtual Constructor Pattern)或多态工厂模式(Polymorphic Factory Pattern)。工厂方法模式是一种类创建型模式。</p>
+        
+          <a class="article-more-a" href="/2018/03/29/design_pattern_58/#more">More >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">design pattern</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/03/29/design_pattern_58/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-design_pattern_64" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/29/design_pattern_64/">工厂三兄弟之抽象工厂模式（四）</a>
+    </h1>
+  
+
+        
+        <a href="/2018/03/29/design_pattern_64/" class="archive-article-date">
+  	<time datetime="2018-03-28T17:11:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-29</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>4 完整解决方案</p>
+<p>Sunny公司开发人员使用抽象工厂模式来重构界面皮肤库的设计，其基本结构如图6所示：</p>
+<p><img src="http://img.blog.csdn.net/20130713164620203?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvTG92ZUxpb24=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""></p>
+<p>图6 界面皮肤库结构图</p>
+        
+          <a class="article-more-a" href="/2018/03/29/design_pattern_64/#more">More >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">design pattern</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/03/29/design_pattern_64/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-design_pattern_39" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/28/design_pattern_39/">多人联机射击游戏中的设计模式应用（一）</a>
+    </h1>
+  
+
+        
+        <a href="/2018/03/28/design_pattern_39/" class="archive-article-date">
+  	<time datetime="2018-03-28T15:55:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-28</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>为了方便大家更加系统地学习和掌握各种常用的设计模式，下面通过一个综合实例——“多人联机射击游戏”来学习如何在实际开发中综合使用设计模式。</p>
+<p>反恐精英(Counter-Strike, CS)、三角洲部队、战地等多人联机射击游戏广受玩家欢迎，在多人联机射击游戏的设计中，可以使用多种设计模式。下面我选取一些较为常用的设计模式进行分析：</p>
+<p>(1) 抽象工厂模式</p>
+<p>在联机射击游戏中提供了多种游戏场景，不同的游戏场景提供了不同的地图、不同的背景音乐、不同的天气等，因此可以使用抽象工厂模式进行设计，类图如图1所示：</p>
+        
+          <a class="article-more-a" href="/2018/03/28/design_pattern_39/#more">More >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">design pattern</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/03/28/design_pattern_39/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-design_pattern_40" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/28/design_pattern_40/">多人联机射击游戏中的设计模式应用（二）</a>
+    </h1>
+  
+
+        
+        <a href="/2018/03/28/design_pattern_40/" class="archive-article-date">
+  	<time datetime="2018-03-27T20:38:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-28</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>  (6) 观察者模式</p>
+<p>联机射击游戏可以实时显示队友和敌人的存活信息，如果有队友或敌人阵亡，所有在线游戏玩家将收到相应的消息，可以提供一个统一的中央角色控制类(CenterController)来实现消息传递机制，在中央角色控制器中定义一个集合用于存储所有的玩家信息，如果某玩家角色(Player)阵亡，则调用CenterController的通知方法notifyPlayers()，该方法将遍历用户信息集合，调用每一个Player的display()方法显示阵亡信息，队友阵亡和敌人阵亡的提示信息有所不同，在使用notifyPlayers()方法通知其他用户的同时，阵亡的角色对象将从用户信息集合中被删除。可使用观察者模式来实现信息的一对多发送，类图如图6所示：</p>
+<p><img src="http://img.my.csdn.net/uploads/201212/06/1354723472_2717.jpg" alt=""></p>
+<p>图6 观察者模式实例类图</p>
+        
+          <a class="article-more-a" href="/2018/03/28/design_pattern_40/#more">More >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">design pattern</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/03/28/design_pattern_40/">展开全文 >></a>
         </p>
       
 
@@ -316,13 +638,13 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/04/26/HashMap/">HashMap 底层分析</a>
+      <a class="article-title" href="/2018/03/26/HashMap/">HashMap 底层分析</a>
     </h1>
   
 
         
-        <a href="/2018/04/26/HashMap/" class="archive-article-date">
-  	<time datetime="2018-04-26T11:00:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-26</time>
+        <a href="/2018/03/26/HashMap/" class="archive-article-date">
+  	<time datetime="2018-03-26T11:00:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-26</time>
 </a>
         
       </header>
@@ -335,7 +657,7 @@
 <p><img src="https://ws2.sinaimg.cn/large/006tNc79gy1fn84b0ftj4j30eb0560sv.jpg" alt=""></p>
 <p>如图所示，HashMap 底层是基于数据和链表实现的。其中有两个重要的参数：<br>
         
-          <a class="article-more-a" href="/2018/04/26/HashMap/#more">More >></a>
+          <a class="article-more-a" href="/2018/03/26/HashMap/#more">More >></a>
         
       
 
@@ -359,7 +681,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2018/04/26/HashMap/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/03/26/HashMap/">展开全文 >></a>
         </p>
       
 
@@ -389,113 +711,102 @@
 
 
   
-    <article id="post-thread-communication" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/04/25/thread-communication/">深入理解线程通信</a>
+      <a class="article-title" href="/2018/03/26/hello-world/">Hello World</a>
     </h1>
   
 
         
-        <a href="/2018/04/25/thread-communication/" class="archive-article-date">
-  	<time datetime="2018-04-24T17:15:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-25</time>
+        <a href="/2018/03/26/hello-world/" class="archive-article-date">
+  	<time datetime="2018-03-26T06:14:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-26</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>开发中不免会遇到需要所有子线程执行完毕通知主线程处理某些逻辑的场景。</p>
-<p>或者是线程 A 在执行到某个条件通知线程 B 执行某个操作。</p>
-<p>可以通过以下几种方式实现：</p>
-<h2 id="等待通知机制"><a href="#等待通知机制" class="headerlink" title="等待通知机制"></a>等待通知机制</h2><blockquote>
-<p>等待通知模式是 Java 中比较经典的线程通信方式。</p>
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.<br>
+        
+          <a class="article-more-a" href="/2018/03/26/hello-world/#more">More >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/03/26/hello-world/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-GarbageCollection" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/26/GarbageCollection/">垃圾回收</a>
+    </h1>
+  
+
+        
+        <a href="/2018/03/26/GarbageCollection/" class="archive-article-date">
+  	<time datetime="2018-03-25T19:49:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-26</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>垃圾回收主要思考三件事情:</p>
 </blockquote>
-<p>两个线程通过对同一对象调用等待 wait() 和通知 notify() 方法来进行通讯。<br>
+<ul>
+<li>哪种内存需要回收？</li>
+<li>什么时候回收？</li>
+<li>怎么回收？</li>
+</ul>
+<h2 id="对象是否存活"><a href="#对象是否存活" class="headerlink" title="对象是否存活"></a>对象是否存活</h2>
         
-          <a class="article-more-a" href="/2018/04/25/thread-communication/#more">More >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Thread</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/04/25/thread-communication/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Thread-common-problem" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/04/24/Thread-common-problem/">Java 多线程常见问题</a>
-    </h1>
-  
-
-        
-        <a href="/2018/04/24/Thread-common-problem/" class="archive-article-date">
-  	<time datetime="2018-04-24T15:03:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-24</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="上下文切换"><a href="#上下文切换" class="headerlink" title="上下文切换"></a>上下文切换</h2><p>多线程并不一定是要在多核处理器才支持的，就算是单核也是可以支持多线程的。</p>
-<p>CPU 通过给每个线程分配一定的时间片，由于时间非常短通常是几十毫秒，所以 CPU 可以不停的切换线程执行任务从而达到了多线程的效果。</p>
-<p>但是由于在线程切换的时候需要保存本次执行的信息(<a href="https://github.com/crossoverJie/Java-Interview/blob/master/MemoryAllocation.md#%E7%A8%8B%E5%BA%8F%E8%AE%A1%E6%95%B0%E5%99%A8" target="_blank" rel="noopener">详见</a>)，在该线程被 CPU 剥夺时间片后又再次运行恢复上次所保存的信息的过程就成为上下文切换。<br>
-        
-          <a class="article-more-a" href="/2018/04/24/Thread-common-problem/#more">More >></a>
+          <a class="article-more-a" href="/2018/03/26/GarbageCollection/#more">More >></a>
         
       
 
@@ -519,7 +830,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2018/04/24/Thread-common-problem/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/03/26/GarbageCollection/">展开全文 >></a>
         </p>
       
 
@@ -549,30 +860,30 @@
 
 
   
-    <article id="post-Consistent-Hash" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-OOM-analysis" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/04/24/Consistent-Hash/">一致 Hash 算法</a>
+      <a class="article-title" href="/2018/03/25/OOM-analysis/">OOM 分析</a>
     </h1>
   
 
         
-        <a href="/2018/04/24/Consistent-Hash/" class="archive-article-date">
-  	<time datetime="2018-04-24T02:47:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-24</time>
+        <a href="/2018/03/25/OOM-analysis/" class="archive-article-date">
+  	<time datetime="2018-03-25T05:18:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-25</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>当我们在做数据库分库分表或者是分布式缓存时，不可避免的都会遇到一个问题:</p>
-<p>如何将数据均匀的分散到各个节点中，并且尽量的在加减节点时能使受影响的数据最少。<br>
+        <h2 id="Java-堆内存溢出"><a href="#Java-堆内存溢出" class="headerlink" title="Java 堆内存溢出"></a>Java 堆内存溢出</h2><p>在 Java 堆中只要不断的创建对象，并且 <code>GC-Roots</code> 到对象之间存在引用链，这样 <code>JVM</code> 就不会回收对象。</p>
+<p>只要将<code>-Xms(最小堆)</code>,<code>-Xmx(最大堆)</code> 设置为一样禁止自动扩展堆内存。</p>
         
-          <a class="article-more-a" href="/2018/04/24/Consistent-Hash/#more">More >></a>
+          <a class="article-more-a" href="/2018/03/25/OOM-analysis/#more">More >></a>
         
       
 
@@ -586,7 +897,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">分布式</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">OOM-analysis</a>
         		</li>
       		
 		</ul>
@@ -596,323 +907,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2018/04/24/Consistent-Hash/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Spike" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/04/17/Spike/">设计一个秒杀系统</a>
-    </h1>
-  
-
-        
-        <a href="/2018/04/17/Spike/" class="archive-article-date">
-  	<time datetime="2018-04-17T02:01:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-17</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>主要做到以下两点:</p>
-<ul>
-<li>尽量将请求过滤在上游。</li>
-<li>尽可能的利用缓存(大多数场景下都是<strong>查多于写</strong>)。</li>
-</ul>
-<p>常用的系统分层结构:</p>
-<p><img src="https://ws4.sinaimg.cn/large/006tNc79ly1fmjw06nz2zj306f0fejrh.jpg" alt=""><br>
-        
-          <a class="article-more-a" href="/2018/04/17/Spike/#more">More >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Spike</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/04/17/Spike/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Threadcore" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/04/16/Threadcore/">Java 多线程三大核心</a>
-    </h1>
-  
-
-        
-        <a href="/2018/04/16/Threadcore/" class="archive-article-date">
-  	<time datetime="2018-04-16T01:13:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-16</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="原子性"><a href="#原子性" class="headerlink" title="原子性"></a>原子性</h2><p><code>Java</code> 的原子性就和数据库事物的原子性差不多，一个操作中要么全部执行成功或者失败。</p>
-<p><code>JMM</code> 只是保证了基本的原子性，但类似于 <code>i++</code> 之类的操作，看似是原子操作，其实里面涉及到:</p>
-<ul>
-<li>获取 i 的值。</li>
-<li>自增。</li>
-<li>再赋值给 i。
-        
-          <a class="article-more-a" href="/2018/04/16/Threadcore/#more">More >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Thread</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/04/16/Threadcore/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-design_pattern_87" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/04/01/design_pattern_87/">树形结构的处理——组合模式（三）</a>
-    </h1>
-  
-
-        
-        <a href="/2018/04/01/design_pattern_87/" class="archive-article-date">
-  	<time datetime="2018-03-31T20:37:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-01</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>11.3  完整解决方案</p>
-<p>为了让系统具有更好的灵活性和可扩展性，客户端可以一致地对待文件和文件夹，Sunny公司开发人员使用组合模式来进行杀毒软件的框架设计，其基本结构如图11-5所示：</p>
-<p><img src="http://img.my.csdn.net/uploads/201209/07/1347030143_6150.jpg" alt=""></p>
-<p>图11-5  杀毒软件框架设计结构图</p>
-        
-          <a class="article-more-a" href="/2018/04/01/design_pattern_87/#more">More >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">design pattern</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/04/01/design_pattern_87/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-test" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/29/test/">测试文章</a>
-    </h1>
-  
-
-        
-        <a href="/2018/03/29/test/" class="archive-article-date">
-  	<time datetime="2018-03-29T08:16:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-29</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>测试文章</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">test</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/03/29/test/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/03/25/OOM-analysis/">展开全文 >></a>
         </p>
       
 
@@ -1064,11 +1059,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
             
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JVM</a>
+                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
               </li>
             
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
+                <a href="javascript:void(0)" class="js-tag color4">JVM</a>
               </li>
             
               <li class="article-tag-list-item">
@@ -1084,15 +1079,23 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
             
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">AOP</a>
-              </li>
-            
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">并发</a>
               </li>
             
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">AOP</a>
+              </li>
+            
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">Thread</a>
+              </li>
+            
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">spring</a>
+              </li>
+            
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">AngularJs</a>
               </li>
             
               <li class="article-tag-list-item">
@@ -1101,10 +1104,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">Spring</a>
-              </li>
-            
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">test</a>
               </li>
             
             <div class="clearfix"></div>
@@ -1159,6 +1158,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               <a href="http://blog.csdn.net/rongbo_j" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>CSDN博客</a>
             </li>
           
+            <li class="search-li">
+              <a href="https://github.com/rongbo-j" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>我的Github</a>
+            </li>
+          
         </ul>
   		
     	</section>
@@ -1167,7 +1170,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">暂无介绍</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">CSDN博客专家，博文视点与清华大学出版社签约图书作者，2016年与清华大学出版社合作，独立编著并出版《AngularJS入门与进阶》一书。</div>
   	  	
     	</section>
     
